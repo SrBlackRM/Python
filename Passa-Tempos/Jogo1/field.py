@@ -10,7 +10,9 @@ class battlefield():
         self.fieldSizeX = 640
         self.fieldSizeY = 480
         self.screen = pygame.display.set_mode((self.fieldSizeX,self.fieldSizeY))
+        self.screenBackground = pygame.image.load('imgs/battlefield.jpg')
         pygame.display.set_caption('Guerrilha')
+        self.screen.blit(pygame.transform.scale(self.screenBackground,(self.fieldSizeX,self.fieldSizeY)),(0,0))
 
         self.obstacle_camp = obstacle.obstacle()
 
@@ -26,13 +28,12 @@ class battlefield():
         pass
 
     def addcampSoldiersPlayer(self):
-        soldier.tank.setPosition(100,230)
-        soldier.medic.setPosition(100,230)
-        soldier.assalt.setPosition(100,230)
+        pass
 
     def showObstacles(self):
         print(f'{self.obstacle_camp.obstacles} \n {len(self.obstacle_camp.obstacles)}')
         print(f'posição de cada: {self.obstacle_camp.position}')
+        
 
     def showVeihclePlayer(self):
         pass

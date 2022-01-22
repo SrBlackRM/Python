@@ -1,6 +1,6 @@
-
 import pygame
 import field
+import mechanics
 from sys import exit
 
 fieldCreate = field.battlefield()
