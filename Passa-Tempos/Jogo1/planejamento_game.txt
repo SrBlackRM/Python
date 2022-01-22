@@ -1,0 +1,45 @@
+campo
+    obstaculos
+        aleatorios
+    veiculo player
+        posicionado
+    soldados do player
+        medico
+        assalt
+        tank
+
+player
+    veiculo player
+        posicionado
+    soldados do player
+        medico
+        assalt
+        tank
+    acoes
+        posicionar veiculo
+            limitado a beira do campo
+        posicionar tropa
+            qualquer lugar que o player determinar
+        atirar
+            escolhido o lugar, mostrar no campo 
+
+desenvolvimento do jogo
+    gerar campo
+        aleatoriamente spawna os obstaculos
+    adicionar tropa
+        um player por vez colocar determinado numero de soldados
+        tendo necessariamente que ter 1 medico, 1 assalt e 1 tank
+    inicia o jogo
+        um player por vez
+            escolhe local do tiro
+        atira 
+            se acertar
+                acrescenta 1 ponto
+                passa a vez 
+            se errar
+                passa a vez 
+        quando terminar os soldados
+            libera acertar o veiculo
+        matou o veiculo
+        fim
+    fim
